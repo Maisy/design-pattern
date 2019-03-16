@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/ch1.abstractfactory"/>
+	<classpathentry kind="src" path="src/ch2.factorymethod"/>
+	<classpathentry kind="src" path="src/ch3.prototype"/>
+	<classpathentry kind="src" path="src/ch4.singleton"/>
+	<classpathentry kind="src" path="src/ch5.adapter"/>
+	<classpathentry kind="src" path="src/ch6.bridge"/>
+	<classpathentry kind="src" path="src/ch7.composite"/>
+	<classpathentry kind="src" path="src/ch8.decorator"/>
+	<classpathentry kind="src" path="src/ch9.facade"/>
+	<classpathentry kind="src" path="src/ch10.flyweight"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="output" path="bin/default"/>
+</classpath>

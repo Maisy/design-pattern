@@ -11,6 +11,8 @@
 	<classpathentry kind="src" path="src/ch9.facade"/>
 	<classpathentry kind="src" path="src/ch10.flyweight"/>
 	<classpathentry kind="src" path="src/ch11.proxy"/>
+	<classpathentry kind="src" path="src/ch12.chainofresponsibility"/>
+	<classpathentry kind="src" path="src/ch13.command"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
 	<classpathentry kind="output" path="bin/default"/>

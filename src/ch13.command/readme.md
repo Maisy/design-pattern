@@ -15,7 +15,7 @@
 
 
 ### 구현
-- `Macro Command`: Command 여러개를 Composite패턴으로 복합Command를 만들어 사용할수도있다.
+- `Macro Command`: Command 여러개를 Composite패턴으로 복합Command를 만들어 사용할수도있다. 트랜젝션 관리할수있음
 - `History List`: undo / redo. 매 작업마다 작업을 수행한 command 클래스 객체를 복제해서 리스트로 저장해서 구현
   - prototype패턴으로 반드시 clone해서 저장해야함.
   - undo redo 반복해서 할경우 완벽하게 이전상태로 안갈 수 있다.(ex. 부동소수점 계산) -> 객체연산으로 수행하는게 아니라 상태값을 그대로 저장하는 형태로 history list를 저장, 관리. = Memento 패턴

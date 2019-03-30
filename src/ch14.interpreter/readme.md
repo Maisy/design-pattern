@@ -24,9 +24,9 @@ terminal은 nonterminal로 정의되며 nonterminal의 instance라고 볼 수 �
 - 표현식을 해석하는 새로운 방법을 추가할 수 있다
 
 ### 관련 패턴
-- 추상구문 트리는 composite패턴과 유사한 클래스 구조. 차이는 interpreter패터는 주어진 문접을 기준으로 클래스를 정의, composite패턴은 클래스간 구성 관계에 따라 클래스 구조가 정의된다. 따라서 interpreter패턴은 클래스 구성 관계 상 composite패턴의 한 예.
+- 추상구문 트리는 `composite`패턴과 유사한 클래스 구조. 차이는 interpreter패터는 주어진 문접을 기준으로 클래스를 정의, composite패턴은 클래스간 구성 관계에 따라 클래스 구조가 정의된다. 따라서 interpreter패턴은 클래스 구성 관계 상 composite패턴의 한 예.
 - interpreter 패턴이 적용되었을때 새로운 작업을 추가하려면 각 크래스마다 새로운 맘버함수를 정의해야 하는데
-기존의 클래스를 수정하지말고 visitor패턴을 사용
+기존의 클래스를 수정하지말고 `visitor`패턴을 사용
 cf) @visitor패턴: 수행할 작업의 종류마다 클래스를 생성하고 정의된 클래스의 객체로 하여금 구문 트리의 각 노드를 순회함으로써 작업이 이루어지게 함. 
 eX) 간단한 스크립트 프로그래밍 문법 => [스크립트 수행] + 참조하는 파일은 존재하는지? + 입력된 값은 정상인지? ...
 - 사용하는 terminal심볼이 많을 경우 한 terminal심볼에 대해 일일이 객체 생성 x -> flyweight패턴으로 동일한 terminal심볼들 간에는 객체 공유

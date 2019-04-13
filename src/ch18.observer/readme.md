@@ -85,8 +85,8 @@ public abstract class Subject {
 - `Mediator` 패턴은 서로 복잡한 관계로 얽혀 있을때 중앙 집중 형태로 묶어주고 `Observer` 패턴은 객체들간의 의존 관계를 분산 시켜준다..
 - Subject는 보통 1개만 있으므로 `Singleton` 패턴 많이 사용
 - `Pub-Sub` 패턴은 중간에 **Event Bus**나 **Message Broker**가 있어서 Publisher는 Broker역할을 하는곳에 메시지를 던져놓고 Subscriber도 Broker에 있는 작업만 받아 작업하면 된다.(Asynchronous)
-  
 ![pub-sub](images/pubsub.png)
+- `Reactor` 패턴: 이벤트 핸들 패턴중의 하나로, event handeler로 이벤트를 하나씩 보내준다.(synhronous)
 
 
 ### 활용 예제
@@ -98,9 +98,12 @@ private static final PropertyChangeListener[] EMPTY = {};
 (...)
 ```
 - Spring Framework에서 ApplicationListener 를 구현하여 bean을 생성하면 event publisher(:subject)에 의해 ApplicationEvent(:observer)를 받을수 있게 된다
+- [ReactiveX](http://reactivex.io/documentation/ko/observable.html)
 
 
 ### 참고
 >[Pub-Sub vs Observer](https://jistol.github.io/software%20engineering/2018/04/11/observer-pubsub-pattern/) 
 
 > [Observer Pattern in the Spring Framework](https://springframework.guru/gang-of-four-design-patterns/observer-pattern)
+
+> [Reactor Pattern](https://ozt88.tistory.com/25)

@@ -1,7 +1,7 @@
 ## 가교 (Bridge)
 
 #구조
-![bridge](images/bridge.png)
+![bridge](images/bridge_ex.png)
 
 
 ###활용예제

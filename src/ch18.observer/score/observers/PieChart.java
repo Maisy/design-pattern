@@ -42,7 +42,7 @@ public class PieChart implements Observer {
 	// }
 
 	public void printOut() {
-		System.out.println(this.getClass().getSimpleName() + " " + name + " " + mathScore);
+		System.out.println("# " + getClass().getSimpleName() + " " + name + " " + mathScore);
 	}
 
 	public void changeScore(String name, SubjectName subjectType, int score) {

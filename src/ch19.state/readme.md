@@ -7,7 +7,7 @@
 ![state](images/statepattern.png)
 - Context: 객체의 현재 상태를 정의한 ConcreteState 인스턴스를 유지, 관리한다.
 - State:  Context의 각 상태별로 필요한 행동을 캡슐화하여 인터페이스로 정의한다.
-- ConcreteState: context의 상태에 따라 처리되어야789+ 할 실제 행동을 구현한다.
+- ConcreteState: context의 상태에 따라 처리되어야 할 실제 행동을 구현한다.
 
 
 ### 고려사항

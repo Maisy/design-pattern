@@ -25,7 +25,7 @@ public class BarGraph implements Observer {
 	public void update(Observable observable, Object arg) {
 		this.pScoreData = (Product) observable;
 		cards = (ArrayList<ScoreCard>) pScoreData.getScoreList();
-		System.out.println(this.getClass().getSimpleName() +" updated....");
+		System.out.println(this.getClass().getSimpleName() + " updated....");
 	}
 
 	// not to use JAVA API
@@ -35,7 +35,7 @@ public class BarGraph implements Observer {
 	// }
 
 	public void printOut() {
-		System.out.println(cards.toString());
+		System.out.println("# " + getClass().getSimpleName() + " " + cards.toString());
 	}
 
 	public void changeScore(String name, SubjectName title, int score) {

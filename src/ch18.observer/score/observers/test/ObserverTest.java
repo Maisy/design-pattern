@@ -12,9 +12,9 @@ public class ObserverTest {
 
 	@Test
 	public void testObserver() {
-		Product product = new Product();
-		BarGraph bar = new BarGraph(product);
-		PieChart pie = new PieChart(product, "maisy");
+		Product product = new Product(); // subject
+		BarGraph bar = new BarGraph(product);// observer
+		PieChart pie = new PieChart(product, "maisy");// observer
 
 		ScoreCard stu1 = new ScoreCard();
 		stu1.name = "bob";

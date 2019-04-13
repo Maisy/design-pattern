@@ -10,7 +10,7 @@ import regularexp.RegularExp;
 public class RegularExpTest {
 
 	public static void main(String[] args) throws IOException {
-		String searchStr = "(Bindings&IDEAA)";
+		String searchStr = "(Bindings^IDEAA)";
 		RegularExp pRegExp = createRegularExp(searchStr);
 		if (pRegExp == null) {
 			System.out.println("search pattern error");

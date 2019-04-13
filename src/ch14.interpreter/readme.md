@@ -7,6 +7,15 @@ ex. 컴파일러로 입력되는 프로그램
 ### 활용
 - 간단한 문법(복잡하면 parser생성기를 쓰세요..?)
 
+
+### 활용예제
+- DSL 중에서도 internal DSL
+  - 목적은 프로그래머가 아닌 도메인 지식을 갖고있는 사람이 사용하기 쉽게 만든거다
+
+### 구조
+- 추상구문트리 
+
+
 ### 참여자
 - abstractExpression: RegualrExp. 최상위 인터페이스(match공통 선언)
 - terminalExpression: OrExp, AndExp: 문법에 정의한 터미널 기호와 관련된 방법 구현. 모든 기호에 대해서 만들어야해
